@@ -998,4 +998,13 @@ a {
     padding: 12px;
     border-radius: 20px;
   }
+  .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.project-card {
+  opacity: 1 !important;
+  transform: none !important;
+}
 }
