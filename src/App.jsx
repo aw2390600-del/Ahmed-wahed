@@ -248,7 +248,7 @@ function App() {
   Crafting Creative Designs | Digital Experiences
 </h1>
 
-<h2 className="hero-name">  | Ahmed Wahed |</h2>
+<h2 className="hero-name">Ahmed Wahed</h2>
 
             <p className="hero-description">
               I am a Veterinary Doctor with a strong interest in technology,

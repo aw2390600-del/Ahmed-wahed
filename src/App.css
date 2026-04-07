@@ -814,7 +814,6 @@ a {
       breathe 3s ease-in-out infinite;
   }
 }
-
 @media (max-width: 768px) {
   body {
     cursor: auto;
@@ -825,73 +824,178 @@ a {
   }
 
   .page-bg {
-    padding: 18px 12px;
+    padding: 12px 8px;
+  }
+
+  .site-card {
+    border-radius: 20px;
   }
 
   .navbar {
-    flex-wrap: wrap;
-    gap: 18px;
-    justify-content: center;
-    padding: 24px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 14px;
+  }
+
+  .logo {
+    font-size: 20px;
   }
 
   .nav-links {
-    gap: 18px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .hero {
-    padding: 34px 22px 56px;
+  .nav-links a {
+    font-size: 14px;
   }
 
-  .projects-section {
-    padding: 18px 22px 50px;
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 16px 40px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-tag {
+    font-size: 13px;
+    padding: 8px 12px;
+    line-height: 1.5;
+    justify-content: center;
   }
 
   .hero-text h1 {
-    font-size: 48px;
+    font-size: clamp(14px, 7vw, 34px);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 0 0 6px;
   }
+
+.hero-name {
+  font-size: clamp(24px, 5vw, 22px);
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  transform: none;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+}
 
   .hero-description {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 10px auto 24px;
+    max-width: 100%;
   }
 
-  .section-title {
-    font-size: 36px;
+  .hero-stats {
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 22px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .stat-card {
+    flex: 1 1 calc(50% - 12px);
+    min-width: 130px;
+    padding: 12px 14px;
   }
 
-  .footer {
-    padding: 22px;
+  .stat-card h3 {
+    font-size: 20px;
+  }
+
+  .stat-card p {
+    font-size: 13px;
+  }
+
+  .hero-buttons,
+  .social-buttons {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
   }
 
   .btn {
     width: 100%;
+    max-width: 260px;
+    padding: 12px 18px;
+    font-size: 15px;
   }
 
-  .social-buttons {
-    width: 100%;
-    justify-content: center;
+  .hero-image-wrapper {
+    order: -1;
   }
 
   .hero-shape {
-    height: 420px;
-    border-radius: 28px;
+    max-width: 280px;
+    height: 320px;
+    border-radius: 22px;
+    margin: 0 auto;
   }
 
-  .stat-card {
-    flex: 1 1 140px;
+  .projects-section {
+    padding: 10px 16px 40px;
   }
 
-  .hero-name {
-    width: 12ch;
-    border-right: none;
-    animation:
-      gradientMove 4s linear infinite,
-      breathe 3s ease-in-out infinite;
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .project-content h3 {
+    font-size: 20px;
+  }
+
+  .project-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-content button {
+    width: 100%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .footer-box {
+    padding: 16px;
+  }
+
+  .footer-box h4 {
+    font-size: 20px;
+  }
+
+  .footer-box p {
+    font-size: 14px;
+  }
+
+  .modal-card {
+    width: 95%;
+    padding: 12px;
+    border-radius: 20px;
   }
 }
